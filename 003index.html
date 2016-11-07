@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+</head>
+<body>
+<div class="left">left</br>
+<button type="button" class="btn">
+click
+</button>
+</div>
+<div class="mid">
+<iframe id="iframe_a" src="index.html" style="border:none;" height="100%" width="95%" frameborder="0"></iframe>
+<div class="foot">
+ doote
+ </div>
+ </div>
+</body>
+
+<style type="text/css">
+
+body {
+  overflow-y : hidden;
+  left:0;
+}
+
+.left {
+  position:fixed;
+  background: #000;
+  height: 100%;
+  width: 5%;
+}
+.mid {
+  position:absolute;
+  margin-left:10%;
+  width:90%;
+  height:100%;
+  background: #fff;
+}
+
+.foot {
+  position: relative;
+  background: #777777;
+  width:100%;
+  margin-top: -5px;
+  height: 100px;
+}
+</style>
+<script>
+$(".left").mouseover(function(){
+  $(".left").animate({width:'10%'});
+
+});
+
+$(".left").mouseleave(function(){
+  $(".left").animate({width:'5%'},300 ,'swing');
+
+});
+
+$(".btn").click(function(){         $("#iframe_a").attr("src","002.html");  
+});
+</script>
