@@ -31,6 +31,15 @@
         
         $('.parallax-bg, .top-area-bg').scrolly({bgParallax: true});
         
+        $(".navbar-toggle").click(function(){
+            $("body").addClass("mobile-menu-activated");
+        });
+        
+          $("ul.nav.navbar-nav li a").click(function(){
+            $(".navbar-collapse").removeClass("in");
+        });
+        
+        
     });
 
 

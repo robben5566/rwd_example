@@ -81,7 +81,7 @@ a:hover { text-decoration: none; }
 .mainmenu ul.nav.navbar-nav {
     text-align: right;
     float: none;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .mainmenu ul.nav.navbar-nav li {
@@ -380,6 +380,7 @@ a:hover { text-decoration: none; }
     color: #fff;
     padding: 0px 3px;
 }
+
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
